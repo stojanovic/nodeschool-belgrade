@@ -1,0 +1,47 @@
+{
+  "name": "nodeschool-belgrade",
+  "version": "1.0.0",
+  "description": "New NodeSchool Belgrade website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build.js --watch",
+    "build": "node build.js --build",
+    "test": "eslint build.js config/*.js src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stojanovic/nodeschool-belgrade.git"
+  },
+  "keywords": [
+    "node",
+    "school",
+    "belgrade",
+    "js"
+  ],
+  "author": "Slobodan Stojanovic <slobodan@cloudhorizon.com> (http://slobodan.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stojanovic/nodeschool-belgrade/issues"
+  },
+  "homepage": "https://github.com/stojanovic/nodeschool-belgrade#readme",
+  "devDependencies": {
+    "eslint": "^2.8.0",
+    "gh-pages": "^0.11.0",
+    "handlebars": "^4.0.5",
+    "metalsmith": "^2.1.0",
+    "metalsmith-better-excerpts": "^0.1.7",
+    "metalsmith-browser-sync": "^1.1.1",
+    "metalsmith-collections": "^0.7.0",
+    "metalsmith-define": "^2.0.1",
+    "metalsmith-drafts": "0.0.1",
+    "metalsmith-excerpts": "^1.1.0",
+    "metalsmith-if": "^0.1.1",
+    "metalsmith-layouts": "^1.6.4",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-sass": "^1.3.0",
+    "metalsmith-tags": "^1.2.1",
+    "moment": "^2.13.0",
+    "optimist": "^0.6.1"
+  }
+}
