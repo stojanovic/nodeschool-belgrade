@@ -1,1 +1,69 @@
-<h1 id="test">Test</h1>
+<!doctype html>
+  <head>
+    <meta name=viewport content=width=device-width,initial-scale=1,maximum-scale=1>
+    <title>Mentors</title>
+    <link rel=stylesheet type=text/css href=/assets/css/index.css>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="animate.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <a href="/">NodeSchool Belgrade</a>
+        <nav>
+          <a href="/events">Events</a>
+          <a href="/mentors">Mentors</a>
+          <a href="/contact">Contact</a>
+          <a href="http://jsbelgrade.org">JS Belgrade</a>
+          <a href="#">RS</a>
+        <nav>
+      </div>
+    </header>
+<div class="logo"></div>
+<div class="event">
+    <h2>Next Event</h2>
+    <a href="#" class="title">NodeSchool #4, International Day</a>
+    <p>May 21st 2016, @ ITC Hub Belgrade</p>
+    <span>
+        <a href="#" class="button yellow">More Info</a>
+        <a href="#" class="button yellow">Register</a>
+    </span>
+</div>
+
+
+<div class="section yellow">
+    <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/events">All Events</a></li>
+        <li><a href="/contact">Contact us</a></li>
+        <li><a href="">Code of Conduct</a></li>
+        <li><a href="">Other NodeSchools in Serbia</a></li>
+        <li><a href="">NodeSchool Kikinda</a></li>
+        <li><a href="">Need help to organize</a></li>
+        <li><a href="http://jsbelgrade.org">JS Belgrade</a></li>
+    </ul>
+
+    <span class="signup">
+        <p>Signup for our newsletter: </p>
+        <input type="text" class="newsletter"/>
+        <a href="#" class="button yellow">Signup</a>
+    </span>
+</div>
+
+<script>
+    $('#animacija').addClass('animated tadaOutLeft');
+    $.fn.extend({
+        animateCss: function (tada) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            $(this).addClass('animated ' + tada).one(animationEnd, function() {
+                $(this).removeClass('animated ' + tada);
+            });
+        }
+    });
+
+    $('#yourElement').animateCss('bounce');
+
+</script>
+
+  </body>
+</html>

@@ -1,1 +1,4 @@
-# Contact page
+---
+title: Contact
+layout: contact.html
+---

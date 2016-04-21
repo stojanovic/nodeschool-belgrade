@@ -1,4 +1,4 @@
 ---
 title: Events
-layout: index.html
+layout: events.html
 ---
