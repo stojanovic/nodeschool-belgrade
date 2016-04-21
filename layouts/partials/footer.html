@@ -1,5 +1,36 @@
-<div>
+<div class="section yellow">
+    <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/events">All Events</a></li>
+        <li><a href="/contact">Contact us</a></li>
+        <li><a href="">Code of Conduct</a></li>
+        <li><a href="">Other NodeSchools in Serbia</a></li>
+        <li><a href="">NodeSchool Kikinda</a></li>
+        <li><a href="">Need help to organize</a></li>
+        <li><a href="http://jsbelgrade.org">JS Belgrade</a></li>
+    </ul>
 
+    <span class="signup">
+        <p>Signup for our newsletter: </p>
+        <input type="text" class="newsletter"/>
+        <a href="#" class="button yellow">Signup</a>
+    </span>
 </div>
+
+<script>
+    $('#animacija').addClass('animated tadaOutLeft');
+    $.fn.extend({
+        animateCss: function (tada) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            $(this).addClass('animated ' + tada).one(animationEnd, function() {
+                $(this).removeClass('animated ' + tada);
+            });
+        }
+    });
+
+    $('#yourElement').animateCss('bounce');
+
+</script>
+
   </body>
 </html>
