@@ -1,0 +1,82 @@
+@import "variables";
+
+.section {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  &.yellow {
+    background: $yellow;
+    background-image: url('../images/test-bg.png');
+    background-size: 25%;
+    background-position: 0 -100px;
+    background-blend-mode: multiply;
+  }
+}
+.info-box {
+  display: block;
+  overflow: hidden;
+  float: left;
+  padding: 0 20px;
+  width: 33.33%;
+  box-sizing: border-box;
+  text-align: center;
+    h3 {
+      font-size: $bigFontSize;
+      color: $darkGrey;
+    }
+    p {
+      font-size: $standardFontSize;
+      color: $darkGrey;
+    }
+
+}
+.images {
+  display: block;
+  overflow: hidden;
+  height: 80px;
+  width: 80px;
+  box-sizing: border-box;
+  margin: 15px auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &.prva {
+    background-image: url('../images/noun_9351_cc.png');
+  }
+  &.druga {
+    background-image: url('../images/noun_194491_cc.png');
+  }
+  &.treca {
+    background-image: url('../images/noun_234933.png');
+  }
+}
+
+#animacija {
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+
+.feedback {
+  background: $darkGrey;
+  height: 140px;
+}
+.button {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 15px;
+  border: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  text-decoration: none;
+  text-align: center;
+  color: $darkGrey;
+  background: $yellow;
+}
