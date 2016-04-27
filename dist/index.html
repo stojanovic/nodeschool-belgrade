@@ -56,21 +56,21 @@
 <div class="event">
     <span>
         <h2>Previous Event</h2>
-        <a href="#" class="title">NodeSchool #3, International Day</a>
-        <p>March 26st 2016, @ ITC Hub Belgrade</p>
+        <a href="#" class="title">NodeSchool #3 Indjija</a>
+        <p>March 26st 2016, @ Startit Center, Indjija</p>
     </span>
     <span>
         <a href="#" class="button yellow">More Info</a>
-        <a href="#" class="button yellow">Register</a>
+        <a href="#" class="button yellow">Gallery</a>
     </span>
     <span>
         <h2>Previous Event</h2>
-        <a href="#" class="title">NodeSchool #2, International Day</a>
-        <p>December 12th 2016, @ Startit Belgrade</p>
+        <a href="#" class="title">NodeSchool #2</a>
+        <p>December 12th 2016, @ Startit Center Belgrade</p>
     </span>
     <span>
         <a href="#" class="button yellow">More Info</a>
-        <a href="#" class="button yellow">Register</a>
+        <a href="#" class="button yellow">Gallery</a>
     </span>
     <span>
         <h2>Previous Event</h2>
@@ -79,11 +79,26 @@
     </span>
     <span>
         <a href="#" class="button yellow">More Info</a>
-        <a href="#" class="button yellow">Register</a>
+        <a href="#" class="button yellow">Gallery</a>
     </span>
 
     <a href="/events" class="link">View all events</a>
 </div>
+
+<script>
+    $('#animacija').addClass('animated tadaOutLeft');
+    $.fn.extend({
+        animateCss: function (tada) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            $(this).addClass('animated ' + tada).one(animationEnd, function() {
+                $(this).removeClass('animated ' + tada);
+            });
+        }
+    });
+
+    $('#div').animateCss('tada');
+
+</script>
 
 
 <div class="section yellow">
