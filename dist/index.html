@@ -4,7 +4,7 @@
     <title>Home page</title>
     <link rel=stylesheet type=text/css href=/assets/css/index.css>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="/assets/css/vendor/animate.css">
   </head>
   <body>
     <header>
@@ -32,19 +32,19 @@
 
 <div class="section yellow">
     <div class="wrapper">
-        <div class="info-box animated infinite tada">
-            <span class="images prva" id="animacija"></span>
+        <div class="info-box">
+            <span class="images prva"></span>
             <h3>Learn JavaScript</h3>
             <p>NodeSchool is for people totally new to programming, as well as experienced programmers looking to try a new language or skillset. Knowing some JavaScript will help, but is not necessary.</p>
         </div>
         <div class="info-box">
-            <span class="images druga" id="animacija"></span>
+            <span class="images druga"></span>
             <h3>Self-Directed</h3>
             <p>NodeSchool workshops are self-guided. No boring lectures. All challenges are open source and are available online at
                     nodeschool.io. This means that you can practice anytime.</p>
         </div>
         <div class="info-box">
-            <span class="images treca" id="animacija"></span>
+            <span class="images treca"></span>
             <h3>For Everyone</h3>
             <p>We think that learning to program is great and everyone should feel welcome at our event. This includes our expectation that all participants be kind to each other and respect our Code of Conduct.</p>
         </div>
@@ -85,22 +85,6 @@
     <a href="/events" class="link">View all events</a>
 </div>
 
-<script>
-    $('#animacija').addClass('animated tadaOutLeft');
-    $.fn.extend({
-        animateCss: function (tada) {
-            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-            $(this).addClass('animated ' + tada).one(animationEnd, function() {
-                $(this).removeClass('animated ' + tada);
-            });
-        }
-    });
-
-    $('#div').animateCss('tada');
-
-</script>
-
-
 <div class="section yellow">
     <ul class="menu">
         <li><a href="/">Home</a></li>
@@ -120,18 +104,23 @@
     </span>
 </div>
 
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 <script>
     $('#animacija').addClass('animated tadaOutLeft');
     $.fn.extend({
-        animateCss: function (tada) {
+        animateCss: function (animationName) {
             var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-            $(this).addClass('animated ' + tada).one(animationEnd, function() {
-                $(this).removeClass('animated ' + tada);
+            $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+                $(this).removeClass('animated ' + animationName);
             });
         }
     });
 
-    $('#yourElement').animateCss('bounce');
+    $('.info-box .images').on("mouseover", function(e) {
+        $(e.target).animateCss('tada');
+    });
+
 
 </script>
 

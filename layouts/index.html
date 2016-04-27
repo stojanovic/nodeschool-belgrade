@@ -12,19 +12,19 @@
 
 <div class="section yellow">
     <div class="wrapper">
-        <div class="info-box animated infinite tada">
-            <span class="images prva" id="animacija"></span>
+        <div class="info-box">
+            <span class="images prva"></span>
             <h3>Learn JavaScript</h3>
             <p>NodeSchool is for people totally new to programming, as well as experienced programmers looking to try a new language or skillset. Knowing some JavaScript will help, but is not necessary.</p>
         </div>
         <div class="info-box">
-            <span class="images druga" id="animacija"></span>
+            <span class="images druga"></span>
             <h3>Self-Directed</h3>
             <p>NodeSchool workshops are self-guided. No boring lectures. All challenges are open source and are available online at
                     nodeschool.io. This means that you can practice anytime.</p>
         </div>
         <div class="info-box">
-            <span class="images treca" id="animacija"></span>
+            <span class="images treca"></span>
             <h3>For Everyone</h3>
             <p>We think that learning to program is great and everyone should feel welcome at our event. This includes our expectation that all participants be kind to each other and respect our Code of Conduct.</p>
         </div>
@@ -64,21 +64,5 @@
 
     <a href="/events" class="link">View all events</a>
 </div>
-
-<script>
-    $('#animacija').addClass('animated tadaOutLeft');
-    $.fn.extend({
-        animateCss: function (tada) {
-            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-            $(this).addClass('animated ' + tada).one(animationEnd, function() {
-                $(this).removeClass('animated ' + tada);
-            });
-        }
-    });
-
-    $('#div').animateCss('tada');
-
-</script>
-
 
 {{> footer}}

@@ -4,7 +4,7 @@
     <title>Mentors</title>
     <link rel=stylesheet type=text/css href=/assets/css/index.css>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="/assets/css/vendor/animate.css">
   </head>
   <body>
     <header>
@@ -41,7 +41,7 @@
                     <p>Lorem iposum....</p>
             </li>
             <li class="flex-item">
-                    <img src="https://pbs.twimg.com/profile_images/653276065381634050/_mRZO_uV.jpg" />
+                    <img src="../../images/slobodan.jpg" />
                     <h3>Slobodan Stojanović</h3>
                     <p>Lorem iposum....</p>
             </li>
@@ -51,12 +51,12 @@
                 <p>Lorem iposum....</p>
             </li>
             <li class="flex-item">
-                <img src="https://pbs.twimg.com/profile_images/641627176161284096/-JYJD7kt.jpg" />
+                <img src="images/sasa.jpg" />
                 <h3>Saša Rudan</h3>
                 <p>Lorem iposum....</p>
             </li>
             <li class="flex-item">
-                <img src="https://pbs.twimg.com/profile_images/641627176161284096/-JYJD7kt.jpg" />
+                <img src="../../images/goran.png" />
                 <h3>Goran Gajić</h3>
                 <p>Lorem iposum....</p>
             </li>
@@ -113,18 +113,23 @@
     </span>
 </div>
 
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 <script>
     $('#animacija').addClass('animated tadaOutLeft');
     $.fn.extend({
-        animateCss: function (tada) {
+        animateCss: function (animationName) {
             var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-            $(this).addClass('animated ' + tada).one(animationEnd, function() {
-                $(this).removeClass('animated ' + tada);
+            $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+                $(this).removeClass('animated ' + animationName);
             });
         }
     });
 
-    $('#yourElement').animateCss('bounce');
+    $('.info-box .images').on("mouseover", function(e) {
+        $(e.target).animateCss('tada');
+    });
+
 
 </script>
 
