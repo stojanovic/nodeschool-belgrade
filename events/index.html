@@ -1,0 +1,97 @@
+<!doctype html>
+  <head>
+    <meta name=viewport content=width=device-width,initial-scale=1,maximum-scale=1>
+    <title>Events</title>
+    <link rel=stylesheet type=text/css href=/assets/css/index.css>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/vendor/animate.css">
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <a href="/">NodeSchool Belgrade</a>
+        <nav>
+          <a href="/events">Events</a>
+          <a href="/mentors">Mentors</a>
+          <a href="/contact">Contact</a>
+          <a href="http://jsbelgrade.org">JS Belgrade</a>
+          <a href="#">RS</a>
+        <nav>
+      </div>
+    </header>
+<div class="logo"></div>
+
+<div class="event">
+  <a href="events/nodeschool-4-international-day" class="title">NodeSchool #4, International Day</a>
+  <p>May 21st, 2016, @ ICT Hub, Belgrade</p>
+  <span>
+    <a href="events/nodeschool-4-international-day" class="button yellow">More Info</a>
+    <a href="http://nodeschool.io/belgrade/" class="button yellow">Register</a>
+  </span>
+</div>
+<div class="event">
+  <a href="events/nodeschool-3" class="title">NodeSchool #3</a>
+  <p>March 26th, 2016, @ Startit Center, Inđija</p>
+  <span>
+    <a href="events/nodeschool-3" class="button yellow">More Info</a>
+    <a href="https://www.facebook.com/media/set/?set&#x3D;a.1112357445463016.1073741838.1023365014362260&amp;type&#x3D;3" class="button yellow">Gallery</a>
+  </span>
+</div>
+<div class="event">
+  <a href="events/nodeschool-1" class="title">NodeSchool #1</a>
+  <p>July 4th, 2015, @ ICT Hub, Belgrade</p>
+  <span>
+    <a href="events/nodeschool-1" class="button yellow">More Info</a>
+    <a href="https://www.facebook.com/media/set/?set&#x3D;a.661410860660941.1073741828.661163417352352&amp;type&#x3D;1&amp;l&#x3D;2108c5e03c" class="button yellow">Gallery</a>
+  </span>
+</div>
+<div class="event">
+  <a href="events/nodeschool-2" class="title">NodeSchool #2</a>
+  <p>December 12th, 2015, @ Startit Center, Belgrade</p>
+  <span>
+    <a href="events/nodeschool-2" class="button yellow">More Info</a>
+    <a href="https://www.facebook.com/media/set/?set&#x3D;a.724263931042300.1073741837.661163417352352&amp;type&#x3D;1&amp;l&#x3D;8d133fafc0" class="button yellow">Gallery</a>
+  </span>
+</div>
+
+<div class="section yellow">
+    <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/events">All Events</a></li>
+        <li><a href="/contact">Contact us</a></li>
+        <li><a href="">Code of Conduct</a></li>
+        <li><a href="">Other NodeSchools in Serbia</a></li>
+        <li><a href="">NodeSchool Kikinda</a></li>
+        <li><a href="">Need help to organize</a></li>
+        <li><a href="http://jsbelgrade.org">JS Belgrade</a></li>
+    </ul>
+
+    <span class="signup">
+        <p>Signup for our newsletter: </p>
+        <input type="text" class="newsletter"/>
+        <a href="#" class="button yellow">Signup</a>
+    </span>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<script>
+    $('#animacija').addClass('animated tadaOutLeft');
+    $.fn.extend({
+        animateCss: function (animationName) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+                $(this).removeClass('animated ' + animationName);
+            });
+        }
+    });
+
+    $('.info-box .images').on("mouseover", function(e) {
+        $(e.target).animateCss('tada');
+    });
+
+
+</script>
+
+  </body>
+</html>

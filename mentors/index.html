@@ -1,0 +1,137 @@
+<!doctype html>
+  <head>
+    <meta name=viewport content=width=device-width,initial-scale=1,maximum-scale=1>
+    <title>Mentors</title>
+    <link rel=stylesheet type=text/css href=/assets/css/index.css>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/vendor/animate.css">
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <a href="/">NodeSchool Belgrade</a>
+        <nav>
+          <a href="/events">Events</a>
+          <a href="/mentors">Mentors</a>
+          <a href="/contact">Contact</a>
+          <a href="http://jsbelgrade.org">JS Belgrade</a>
+          <a href="#">RS</a>
+        <nav>
+      </div>
+    </header>
+<div class="logo"></div>
+<div class="event">
+    <h2>Events</h2>
+
+    <div class="wrapper">
+        <ul class="flex-container">
+            <li class="flex-item">
+                    <img src="https://pbs.twimg.com/profile_images/641627176161284096/-JYJD7kt.jpg" />
+                    <h3>Dušan Stanković</h3>
+                    <p>Lorem iposum....</p>
+            </li>
+            <li class="flex-item">
+                    <img src="https://pbs.twimg.com/profile_images/653276065381634050/_mRZO_uV.jpg" />
+                    <h3>Bogdan Gavrilović</h3>
+                    <p>Lorem iposum....</p>
+            </li>
+            <li class="flex-item">
+                    <img src="https://pbs.twimg.com/profile_images/653276065381634050/_mRZO_uV.jpg" />
+                    <h3>Aleksandar Simović</h3>
+                    <p>Lorem iposum....</p>
+            </li>
+            <li class="flex-item">
+                    <img src="../../images/slobodan.jpg" />
+                    <h3>Slobodan Stojanović</h3>
+                    <p>Lorem iposum....</p>
+            </li>
+            <li class="flex-item">
+                <img src="https://pbs.twimg.com/profile_images/641627176161284096/-JYJD7kt.jpg" />
+                <h3>Dejan Dimić</h3>
+                <p>Lorem iposum....</p>
+            </li>
+            <li class="flex-item">
+                <img src="images/sasa.jpg" />
+                <h3>Saša Rudan</h3>
+                <p>Lorem iposum....</p>
+            </li>
+            <li class="flex-item">
+                <img src="../../images/goran.png" />
+                <h3>Goran Gajić</h3>
+                <p>Lorem iposum....</p>
+            </li>
+            <li class="flex-item">
+                <img src="https://pbs.twimg.com/profile_images/641627176161284096/-JYJD7kt.jpg" />
+                <h3>Miloš Džepina</h3>
+                <p>Lorem iposum....</p>
+            </li>
+            <li class="flex-item">
+                <img src="https://pbs.twimg.com/profile_images/641627176161284096/-JYJD7kt.jpg" />
+                <h3>Ivan Dejanović</h3>
+                <p>Lorem iposum....</p>
+            </li>
+            <li class="flex-item">
+                <img src="https://pbs.twimg.com/profile_images/641627176161284096/-JYJD7kt.jpg" />
+                <h3>Ivan Batić</h3>
+                <p>Lorem iposum....</p>
+            </li>
+            <li class="flex-item">
+                <img src="https://pbs.twimg.com/profile_images/641627176161284096/-JYJD7kt.jpg" />
+                <h3>Maja Nedeljković</h3>
+                <p>Lorem iposum....</p>
+            </li>
+            <li class="flex-item">
+                <img src="https://pbs.twimg.com/profile_images/641627176161284096/-JYJD7kt.jpg" />
+                <h3>Una Kisić</h3>
+                <p>Lorem iposum....</p>
+            </li>
+
+        </ul>
+    </div>
+
+
+
+</div>
+
+
+<div class="section yellow">
+    <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/events">All Events</a></li>
+        <li><a href="/contact">Contact us</a></li>
+        <li><a href="">Code of Conduct</a></li>
+        <li><a href="">Other NodeSchools in Serbia</a></li>
+        <li><a href="">NodeSchool Kikinda</a></li>
+        <li><a href="">Need help to organize</a></li>
+        <li><a href="http://jsbelgrade.org">JS Belgrade</a></li>
+    </ul>
+
+    <span class="signup">
+        <p>Signup for our newsletter: </p>
+        <input type="text" class="newsletter"/>
+        <a href="#" class="button yellow">Signup</a>
+    </span>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<script>
+    $('#animacija').addClass('animated tadaOutLeft');
+    $.fn.extend({
+        animateCss: function (animationName) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+                $(this).removeClass('animated ' + animationName);
+            });
+        }
+    });
+
+    $('.info-box .images').on("mouseover", function(e) {
+        $(e.target).animateCss('tada');
+    });
+
+
+</script>
+
+  </body>
+</html>
