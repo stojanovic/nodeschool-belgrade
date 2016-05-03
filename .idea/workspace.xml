@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="153c71b4-35cf-4f51-8267-79669ceeee6d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/css/event.css" afterPath="$PROJECT_DIR$/dist/assets/css/event.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/code-of-conduct/assets/css/event.css" afterPath="$PROJECT_DIR$/dist/code-of-conduct/assets/css/event.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contact/assets/css/event.css" afterPath="$PROJECT_DIR$/dist/contact/assets/css/event.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/events/assets/css/event.css" afterPath="$PROJECT_DIR$/dist/events/assets/css/event.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/mentors/assets/css/event.css" afterPath="$PROJECT_DIR$/dist/mentors/assets/css/event.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/sass/partials/event.scss" afterPath="$PROJECT_DIR$/src/assets/sass/partials/event.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/css/home.css" afterPath="$PROJECT_DIR$/dist/assets/css/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/code-of-conduct/assets/css/home.css" afterPath="$PROJECT_DIR$/dist/code-of-conduct/assets/css/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contact/assets/css/home.css" afterPath="$PROJECT_DIR$/dist/contact/assets/css/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/events/assets/css/home.css" afterPath="$PROJECT_DIR$/dist/events/assets/css/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/mentors/assets/css/home.css" afterPath="$PROJECT_DIR$/dist/mentors/assets/css/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/sass/partials/home.scss" afterPath="$PROJECT_DIR$/src/assets/sass/partials/home.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/css/index.css" afterPath="$PROJECT_DIR$/dist/assets/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/code-of-conduct/assets/css/index.css" afterPath="$PROJECT_DIR$/dist/code-of-conduct/assets/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/contact/assets/css/index.css" afterPath="$PROJECT_DIR$/dist/contact/assets/css/index.css" />
@@ -51,21 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/assets/sass/partials/home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-35.96154" vertical-offset="0" max-vertical-offset="1411">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/assets/sass/partials/event.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8731343" vertical-offset="110" max-vertical-offset="782">
-              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+            <state vertical-scroll-proportion="-0.04373178" vertical-offset="1239" max-vertical-offset="1887">
+              <caret line="72" column="13" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -74,18 +64,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layouts/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.23077" vertical-offset="353" max-vertical-offset="1275">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.0384617" vertical-offset="395" max-vertical-offset="1326">
+              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/sass/index.scss">
+      <file leaf-file-name="event.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/sass/partials/event.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="561">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="782">
+              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -104,14 +94,14 @@
         <option value="$PROJECT_DIR$/src/assets/sass/partials/mentors.scss" />
         <option value="$PROJECT_DIR$/layouts/contact.html" />
         <option value="$PROJECT_DIR$/layouts/events.html" />
-        <option value="$PROJECT_DIR$/src/assets/sass/partials/home.scss" />
         <option value="$PROJECT_DIR$/layouts/partials/footer.html" />
         <option value="$PROJECT_DIR$/layouts/partials/header.html" />
         <option value="$PROJECT_DIR$/layouts/mentors.html" />
         <option value="$PROJECT_DIR$/dist/index.html" />
+        <option value="$PROJECT_DIR$/src/assets/sass/partials/event.scss" />
         <option value="$PROJECT_DIR$/src/assets/sass/index.scss" />
         <option value="$PROJECT_DIR$/layouts/index.html" />
-        <option value="$PROJECT_DIR$/src/assets/sass/partials/event.scss" />
+        <option value="$PROJECT_DIR$/src/assets/sass/partials/home.scss" />
       </list>
     </option>
   </component>
@@ -335,7 +325,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0067340066" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33164984" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -439,13 +429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/sass/partials/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="238">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../NodeSchool-sajt/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
@@ -538,14 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/sass/partials/home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.96154" vertical-offset="0" max-vertical-offset="1411">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/sass/partials/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.776087" vertical-offset="0" max-vertical-offset="544">
@@ -556,24 +531,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/sass/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="561">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="544">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layouts/index.html">
+    <entry file="file://$PROJECT_DIR$/src/assets/sass/partials/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.23077" vertical-offset="353" max-vertical-offset="1275">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.14137214" vertical-offset="0" max-vertical-offset="481">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/sass/partials/event.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8731343" vertical-offset="110" max-vertical-offset="782">
+        <state vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="782">
           <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0384617" vertical-offset="395" max-vertical-offset="1326">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/sass/partials/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.04373178" vertical-offset="1239" max-vertical-offset="1887">
+          <caret line="72" column="13" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
           <folding />
         </state>
       </provider>
