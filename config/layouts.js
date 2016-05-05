@@ -1,6 +1,7 @@
 'use strict'
 
-const layouts = require('metalsmith-layouts')
+const layouts = require('metalsmith-layouts'),
+      Handlebars = require('./handlebars-helpers')
 
 module.exports = layouts({
   // Use handlebars as a view engine

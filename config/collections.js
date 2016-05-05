@@ -3,7 +3,7 @@
 const collections = require('metalsmith-collections')
 
 module.exports = collections({
-  posts: {
+  events: {
     sortBy: 'date',
     reverse: true
   }

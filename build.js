@@ -1,10 +1,11 @@
 'use strict'
 
-const metalsmith = require('metalsmith')
-const ifThen = require('metalsmith-if'),
+const metalsmith = require('metalsmith'),
+  ifThen = require('metalsmith-if'),
   argv = require('optimist').argv,
   ghpages = require('gh-pages'),
   path = require('path'),
+  dateFormatter = require('metalsmith-date-formatter'),
   metadata = require('./config/metadata'),
   sass = require('./config/sass'),
   collections = require('./config/collections'),
@@ -12,15 +13,19 @@ const ifThen = require('metalsmith-if'),
   layouts = require('./config/layouts'),
   permalinks = require('./config/permalinks'),
   markdown = require('./config/markdown'),
-  browsersync = require('./config/browsersync'),
-  drafts = require('metalsmith-drafts')
+  browsersync = require('./config/browsersync')
 
 metalsmith(__dirname)
   .source('src')
   .use(metadata)
+  .use(dateFormatter({
+    dates: [{
+      key: 'date',
+      format: 'MMMM Do, YYYY'
+    }]
+  }))
   .use(sass)
   .use(markdown)
-  .use(drafts())
   .use(collections)
   .use(excerpts())
   .use(permalinks)
@@ -42,3 +47,4 @@ metalsmith(__dirname)
         console.log('Website is published on GH pages branch!')
       })
   })
+

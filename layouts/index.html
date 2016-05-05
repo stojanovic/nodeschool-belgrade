@@ -2,12 +2,14 @@
 <div class="logo"></div>
 <div class="event">
     <h2>Next Event</h2>
-    <a href="#" class="title">NodeSchool #4, International Day</a>
-    <p>May 21st 2016, @ ITC Hub Belgrade</p>
-    <span>
-        <a href="#" class="button yellow">More Info</a>
-        <a href="#" class="button yellow">Register</a>
-    </span>
+    {{#each (nextEvents collections.events 1)}}
+        <a href="{{this.path}}" class="title">{{this.title}}</a>
+        <p>{{this.date}} @ {{this.location}}</p>
+        <span>
+            <a href="{{this.path}}" class="button yellow">More Info</a>
+            <a href="{{this.register}}" class="button yellow">Register</a>
+        </span>
+    {{/each}}
 </div>
 
 <div class="section yellow">
@@ -39,32 +41,18 @@
 </div>
 
 <div class="event">
-        <h2>Previous Event</h2>
-    <div class="row">
-        <a href="#" class="title">NodeSchool #3 Indjija</a>
-        <p>March 26st 2016, @ Startit Center, Indjija</p>
+    <h2>Previous Event</h2>
+    {{#each (pastEvents collections.events 3)}}
+        <div class="row">
+            <a href="{{this.path}}" class="title">{{this.title}}</a>
+            <p>{{this.date}} @ {{this.location}}</p>
 
-        <span>
-            <a href="#" class="button yellow">More Info</a>
-            <a href="#" class="button yellow">Gallery</a>
-        </span>
-    </div>
-    <div  class="row">
-        <a href="#" class="title">NodeSchool #2</a>
-        <p>December 12th 2016, @ Startit Center Belgrade</p>
-        <span>
-            <a href="#" class="button yellow">More Info</a>
-            <a href="#" class="button yellow">Gallery</a>
-        </span>
-    </div>
-    <div  class="row">
-        <a href="#" class="title">NodeSchool #1, International Day</a>
-        <p>July 4th 2015, @ ITC Hub Belgrade</p>
-        <span>
-            <a href="#" class="button yellow">More Info</a>
-            <a href="#" class="button yellow">Gallery</a>
-        </span>
-    </div>
+            <span>
+                <a href="{{this.path}}" class="button yellow">More Info</a>
+                <a href="{{this.gallery}}" class="button yellow">Gallery</a>
+            </span>
+        </div>
+    {{/each}}
 
     <a href="/events" class="link">View all events</a>
 </div>
