@@ -24,6 +24,15 @@
   box-sizing: border-box;
   text-align: center;
 
+  @media only screen and (max-width: 768px) {
+    float: none;
+    clear: both;
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+  }
+
   h3 {
       font-size: $bigFontSize;
       color: $darkGrey;
@@ -32,6 +41,7 @@
   p {
       font-size: $standardFontSize;
       color: $darkGrey;
+
     }
 }
 
@@ -57,6 +67,11 @@
   &.treca {
     background-image: url('../images/noun_234933.png');
   }
+
+  @media only screen and (max-width: 479px) {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 
@@ -75,6 +90,14 @@
     text-align: center;
     font-size: $bigFontSize;
     color: $yellow;
+
+    @media only screen and (max-width: 768px) {
+      font-size: $middleFontSize;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: $smallFontSize;
+    }
   }
 
   span {
@@ -84,6 +107,11 @@
     margin-right: 150px;
     font-size: $middleFontSize;
     color: $yellow;
+
+    @media only screen and (max-width: 768px) {
+      font-size: $smallFontSize;
+      margin-right: 60px;
+    }
   }
 }
 

@@ -3,7 +3,16 @@ staviti na slicice neku tada!
 lepo formatirati slicice 100*100
 
 **dodati footer
-dodati events
-srediti stranu events da radi
+**dodati events
+**srediti stranu events da radi
 doraditi stranu contact
 srediti da sve bude responsive
+
+
+srediti footer
+srediti stranice za posebne events
+dodati prijavu za mentora
+srediti kontakt stranicu
+povezati newsletter
+dodati opise za mentore
+srediti menu

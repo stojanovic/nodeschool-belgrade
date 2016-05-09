@@ -11,6 +11,10 @@ header {
 
   nav {
     float: right;
+    
+    @media only screen and (max-width: 479px) {
+    float: none;
+    }
   }
 
   a {
@@ -22,5 +26,11 @@ header {
     font-size: $bigFontSize;
     margin-left: 22px;
     word-spacing: -7px;
+
+    @media only screen and (max-width: 479px) {
+      float: none;
+      font-size: $smallFontSize;
+    }
   }
+
 }
