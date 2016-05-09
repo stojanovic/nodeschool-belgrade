@@ -1,0 +1,20 @@
+@import "variables";
+
+.single-event {
+  padding: 80px;
+  display: block;
+  overflow: hidden;
+  h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: $bigFontSize;
+  }
+  h2 {
+    margin: 0 auto;
+    font-size: $middleFontSize;
+    font-style: italic;
+  }
+  ul {
+    font-size: $middleFontSize;
+  }
+}

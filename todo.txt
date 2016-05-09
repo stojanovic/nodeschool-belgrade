@@ -11,7 +11,7 @@ srediti da sve bude responsive
 
 srediti footer
 srediti stranice za posebne events
-dodati prijavu za mentora
+**dodati prijavu za mentora
 srediti kontakt stranicu
 povezati newsletter
 dodati opise za mentore

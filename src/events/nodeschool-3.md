@@ -1,4 +1,6 @@
 ---
+layout: event.html
+
 title: "NodeSchool #3"
 date: 2016-03-26 11:00:00
 duration: 4

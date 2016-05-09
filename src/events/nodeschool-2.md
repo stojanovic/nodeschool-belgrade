@@ -1,4 +1,6 @@
 ---
+layout: event.html
+
 title: "NodeSchool #2"
 date: 2015-12-12 11:00:00
 duration: 4
