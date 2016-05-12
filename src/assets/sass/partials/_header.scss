@@ -15,6 +15,10 @@ header {
     @media only screen and (max-width: 768px) {
       display: none;
     }
+
+    a {
+      margin-left: 22px;
+    }
   }
 
   &.show-nav nav {
@@ -42,7 +46,6 @@ header {
     text-decoration: none;
     font-weight: bold;
     font-size: $bigFontSize;
-    margin-left: 22px;
     word-spacing: -7px;
 
     @media only screen and (max-width: 479px) {
