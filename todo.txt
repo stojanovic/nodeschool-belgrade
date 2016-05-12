@@ -1,6 +1,6 @@
 **staviti slicice kao background
-staviti na slicice neku tada!
-lepo formatirati slicice 100*100
+**staviti na slicice neku tada!
+**lepo formatirati slicice 100*100
 
 **dodati footer
 **dodati events
