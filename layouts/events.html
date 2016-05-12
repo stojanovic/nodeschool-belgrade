@@ -3,10 +3,10 @@
 
 {{#each collections.events}}
 <div class="event">
-  <a href="{{this.path}}" class="title">{{this.title}}</a>
+  <a href="/{{this.path}}" class="title">{{this.title}}</a>
   <p>{{this.date}}, @ {{this.location}}</p>
   <span>
-    <a href="{{this.path}}" class="button yellow">More Info</a>
+    <a href="/{{this.path}}" class="button yellow">More Info</a>
     {{#if gallery}}
     <a href="{{this.gallery}}" class="button yellow">Gallery</a>
     {{/if}}
