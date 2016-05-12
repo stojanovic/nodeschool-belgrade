@@ -3,7 +3,6 @@
 header {
   display: block;
   position: absolute;
-  overflow: hidden;
   top: 0;
   width: 100%;
   height: 60px;
@@ -11,9 +10,28 @@ header {
 
   nav {
     float: right;
-    
-    @media only screen and (max-width: 479px) {
-    float: none;
+    background: $darkGrey;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &.show-nav nav {
+    @media only screen and (max-width: 768px) {
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: inset 0 3px 15px rgba(0, 0, 0, .2);
+
+      a {
+        display: block;
+        float: none;
+        clear: both;
+        margin: 0;
+        padding-left: 20px;
+        border-bottom: 1px solid #292929;
+      }
     }
   }
 
@@ -33,4 +51,95 @@ header {
     }
   }
 
+  .nav-toggle {
+    position: relative;
+    display: none;
+    float: right;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+
+    &:hover {
+      background: rgba(0, 0, 0, .4);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    & span {
+      display: block;
+      position: absolute;
+      top: 29px;
+      left: 18px;
+      right: 18px;
+      height: 2px;
+      background: $yellow;
+    }
+
+    & span::before,
+    & span::after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $yellow;
+      content: "";
+    }
+
+    & span::before {
+      top: -8px;
+    }
+
+    & span::after {
+      bottom: -8px;
+    }
+
+    & span {
+      transition: background 0s $animation-duration;
+    }
+
+    & span::before,
+    & span::after {
+      transition-duration: $animation-duration, $animation-duration;
+      transition-delay: $animation-duration, 0s;
+    }
+
+    & span::before {
+      transition-property: top, transform;
+    }
+
+    & span::after {
+      transition-property: bottom, transform;
+    }
+  }
+
+  /* active state, i.e. menu open */
+  &.show-nav .nav-toggle {
+    background-color: rgba(0, 0, 0, .4);
+  }
+
+  &.show-nav .nav-toggle span {
+    background: none;
+  }
+
+  &.show-nav .nav-toggle span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  &.show-nav .nav-toggle span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+
+  &.show-nav .nav-toggle span::before,
+  &.show-nav .nav-toggle span::after {
+    transition-delay: 0s, $animation-duration;
+  }
 }
