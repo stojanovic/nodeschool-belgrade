@@ -1,13 +1,18 @@
 @import "variables";
 
 .menu {
+  display: block;
   float: left;
-  margin: 25px 200px;
+  margin: 0;
+  width: 50%;
   font-weight: bold;
+  box-sizing: border-box;
+
   li {
     list-style-type: none;
   }
-  a{
+  
+  a {
     text-decoration: none;
     font-size: $smallFontSize;
     color: $darkGrey;
@@ -15,12 +20,16 @@
 }
 
 .signup {
+  display: block;
   float: right;
-  margin: 25px 200px;
+  margin: 0;
+  width: 50%;
+  box-sizing: border-box;
 
   p {
     display: block;
   }
+
   .newsletter {
     display: block;
     width: 100%;
@@ -34,6 +43,7 @@
     text-align: center;
     color: $darkGrey;
   }
+  
   a {
     display: block;
     float: right;
