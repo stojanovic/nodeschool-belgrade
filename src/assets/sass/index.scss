@@ -5,6 +5,7 @@
 @import "partials/footer";
 @import "partials/mentors";
 @import "partials/single-event";
+@import "partials/contact";
 
 body {
   margin: 0;
@@ -12,10 +13,10 @@ body {
 }
 .wrapper{
   display: block;
+  overflow: hidden;
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
-  overflow: hidden;
 }
 .logo {
   display: block;
