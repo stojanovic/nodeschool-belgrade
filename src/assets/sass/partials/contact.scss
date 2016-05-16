@@ -30,11 +30,17 @@
     font-size: $middleFontSize;
     color: $darkGrey;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 30px;
 
     @media only screen and (max-width: 480px) {
       display: block;
       font-size: $smallFontSize;
+      padding-top: 15px;
+    }
+    @media only screen and (max-width: 350px) {
+      max-width: 230px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
   }
 }
